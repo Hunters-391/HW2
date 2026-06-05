@@ -494,6 +494,11 @@ files.download("final_road_contour_result_fixed.png")
   <img src="/lbp.png" width="400">
 </p>
 
+## Narrow road ROI
+<p align="center">
+  <img src="/roi.png" width="400">
+</p>
+
 ## final result
 <p align="center">
   <img src="/final_road_contour_result_fixed.png" width="400">
