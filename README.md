@@ -120,7 +120,6 @@ top_y    = int(h * 0.43)
 bottom_left_x  = int(w * 0.03)
 bottom_right_x = int(w * 0.97)
 
-# 遠方道路終點必須很窄，避免吃到左右樹木
 top_left_x  = int(w * 0.485)
 top_right_x = int(w * 0.515)
 
@@ -137,18 +136,10 @@ roi_view = img_rgb.copy()
 cv2.polylines(roi_view, [road_roi_polygon], True, (255, 0, 0), 4)
 show_image(roi_view, "Narrow Road ROI")
 
-
-# ============================================================
-# 6. 建立禁止區域：草木、天空、海洋
-# ============================================================
-
-# 綠色草木
 is_green = (H >= 35) & (H <= 90) & (S > 40)
 
-# 藍色天空 / 海洋
 is_blue = (H >= 90) & (H <= 135) & (S > 35)
 
-# 高飽和自然區域
 is_nature = is_green | is_blue
 
 # 道路顏色條件
@@ -170,7 +161,6 @@ candidate_mask[
     sobel_condition
 ] = 255
 
-# 注意：這裡 kernel 不要太大，避免膨脹到樹木
 kernel_3 = np.ones((3, 3), np.uint8)
 kernel_5 = np.ones((5, 5), np.uint8)
 
@@ -409,7 +399,6 @@ road_mask_clean = cv2.morphologyEx(road_mask_clean, cv2.MORPH_OPEN, kernel_open)
 
 road_mask_clean = cv2.bitwise_and(road_mask_clean, roi_mask)
 
-# 再次清掉自然區域
 road_mask_clean[is_nature] = 0
 
 show_image(road_mask_clean, "Clean Road Mask", cmap="gray")
