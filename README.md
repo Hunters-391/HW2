@@ -1,4 +1,27 @@
 # HW2 嵌入式影像處理作業二:抓馬路
+# Road Contour Detection
+
+本專案使用影像處理方法抓取馬路輪廓，主要流程包含 Sobel、LBP、Distance Transform、BFS、Feature Distance、Image Patch Distance、Find Contours 與 Max Contour。
+
+## Method
+
+```text
+抓馬路輪廓
+│
+├── 特徵
+│   ├── Sobel
+│   └── LBP
+│
+├── 找起始點
+│   ├── Distance
+│   └── Transform
+│
+├── BFS
+│   ├── Distance of Features
+│   └── Distance of Image Patches
+│
+└── Find Contours
+    └── Max Contour
 # ============================================================
 # Google Colab 完整修正版
 # 目的：抓馬路輪廓，但避免終點抓到樹木、草地、海洋、天空
