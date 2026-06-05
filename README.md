@@ -501,3 +501,17 @@ output_bgr = cv2.cvtColor(result, cv2.COLOR_RGB2BGR)
 cv2.imwrite("final_road_contour_result_fixed.png", output_bgr)
 
 files.download("final_road_contour_result_fixed.png")
+
+import os
+
+os.makedirs("github_results/images", exist_ok=True)
+
+cv2.imwrite("github_results/images/original.png", cv2.cvtColor(img_rgb, cv2.COLOR_RGB2BGR))
+cv2.imwrite("github_results/images/sobel.png", sobel_mag)
+cv2.imwrite("github_results/images/lbp.png", lbp_img)
+cv2.imwrite("github_results/images/candidate_mask.png", candidate_mask)
+cv2.imwrite("github_results/images/bfs_mask.png", road_mask)
+cv2.imwrite("github_results/images/final_mask.png", final_mask)
+cv2.imwrite("github_results/images/final_result.png", cv2.cvtColor(result, cv2.COLOR_RGB2BGR))
+
+print("圖片已儲存完成")
