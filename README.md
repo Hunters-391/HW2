@@ -499,6 +499,11 @@ files.download("final_road_contour_result_fixed.png")
   <img src="/roi.png" width="400">
 </p>
 
+## Candidate road mask
+<p align="center">
+  <img src="/distance.png" width="400">
+</p>
+
 ## final result
 <p align="center">
   <img src="/final_road_contour_result_fixed.png" width="400">
