@@ -503,7 +503,10 @@ cv2.imwrite("final_road_contour_result_fixed.png", output_bgr)
 files.download("final_road_contour_result_fixed.png")
 
 # Road Contour Detection
-
+## Original image
+<p align="center">
+  <img src="/655.png" width="400">
+</p>
 ## Final Result
 <p align="center">
   <img src="/final_road_contour_result_fixed.png" width="400">
