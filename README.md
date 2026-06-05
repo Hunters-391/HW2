@@ -516,7 +516,7 @@ BFS 起始點數量： 1192
 <p align="center">
   <img src="/mask.png" width="400">
 </p>
-
+最大馬路輪廓面積： 215502.0
 ## final result
 <p align="center">
   <img src="/final_road_contour_result.png" width="400">
