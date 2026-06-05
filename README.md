@@ -511,3 +511,8 @@ Distance Transform 最大值： 81.28528594970703
   <img src="/F.png" width="400">
 </p>
 BFS 起始點數量： 1192
+
+## final result
+<p align="center">
+  <img src="/final_road_contour_result.png" width="400">
+</p>
