@@ -506,11 +506,6 @@ files.download("final_road_contour_result_fixed.png")
 Distance Transform 最大值： 81.28528594970703
 主要起始點： (520, 606)
 
-## Candidate road mask
-<p align="center">
-  <img src="/distance.png" width="400">
-</p>
-
 ## 起始點
 <p align="center">
   <img src="/F.png" width="400">
