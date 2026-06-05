@@ -505,5 +505,5 @@ files.download("final_road_contour_result_fixed.png")
 # Road Contour Detection
 
 ## Final Result
+![Final Result](images/final_road_contour_result_fixed.png)
 
-![Final Result](images/final_result.png)
