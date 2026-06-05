@@ -3,7 +3,7 @@
 
 本專案使用影像處理方法抓取馬路輪廓，主要流程包含 Sobel、LBP、Distance Transform、BFS、Feature Distance、Image Patch Distance、Find Contours 與 Max Contour。
 
-## Method
+Method
 
 ```text
 抓馬路輪廓
